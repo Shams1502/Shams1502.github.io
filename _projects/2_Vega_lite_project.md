@@ -21,7 +21,7 @@ Team Members : Shambhavi Sahay(ssahay4), Goura Karn(goura2), Vikramaditya Agarwa
 
 In this visualization, we are trying to plot the rate of all property crimes with the rate of all Violent Crimes. We have used Altair to create the below plot. We have used brush to highlight selection intervals. We have also added color based on the count of the records.
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/Interactiveplot1.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/InteractivePlot1.json" style="width: 100%"></vegachart>
 
 # Visualization 2
 
