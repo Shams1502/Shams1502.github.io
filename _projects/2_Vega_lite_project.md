@@ -24,7 +24,7 @@ In this visualization, we are trying to plot the rate of all property crimes wit
 <vegachart schema-url="{{ site.baseurl }}/assets/json/InteractivePlot1.json" style="width: 100%"></vegachart>
 
 # Visualization 2
-
+```
 Below, we have created a non-interactive histogram using altair based on building status and the total square footage. The x-axis has the building status that is an ordinal value and we have specified square footage as quantitative.
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/jsonBldgStatusVsSquareFootage.json" style="width: 100%"></vegachart>
@@ -40,7 +40,7 @@ For the second visualization, the line chart gets highlighted based on the agenc
 <vegachart schema-url="{{ site.baseurl }}/assets/json/jsonIntYearAcquiredVsSquareFootage.json" style="width: 100%"></vegachart>
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/jsonLabYearAcquiredVsSquareFootage.json" style="width: 100%"></vegachart>
-
+```
 
 
 #References:

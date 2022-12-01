@@ -82,25 +82,25 @@
 
 <p>In this visualization, we are trying to plot the rate of all property crimes with the rate of all Violent Crimes. We have used Altair to create the below plot. We have used brush to highlight selection intervals. We have also added color based on the count of the records.</p>
 
-<vegachart schema-url="/assets/json/Interactiveplot1.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/assets/json/InteractivePlot1.json" style="width: 100%"></vegachart>
 
 <h1 id="visualization-2">Visualization 2</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Below, we have created a non-interactive histogram using altair based on building status and the total square footage. The x-axis has the building status that is an ordinal value and we have specified square footage as quantitative.
 
-<p>Below, we have created a non-interactive histogram using altair based on building status and the total square footage. The x-axis has the building status that is an ordinal value and we have specified square footage as quantitative.</p>
+&lt;vegachart schema-url="/assets/json/jsonBldgStatusVsSquareFootage.json" style="width: 100%"&gt;&lt;/vegachart&gt;
 
-<vegachart schema-url="/assets/json/jsonBldgStatusVsSquareFootage.json" style="width: 100%"></vegachart>
+# Visualization 3 and Visualization 4
 
-<h1 id="visualization-3-and-visualization-4">Visualization 3 and Visualization 4</h1>
+Next, we have created two line charts based on the year the building was acquired and the total square footage of the building. We have used the agency name as the legend in both of the visualizations.
 
-<p>Next, we have created two line charts based on the year the building was acquired and the total square footage of the building. We have used the agency name as the legend in both of the visualizations.</p>
+For the first visualization we have created a selection based interaction. Upon selection the area gets highlighted.
 
-<p>For the first visualization we have created a selection based interaction. Upon selection the area gets highlighted.</p>
+For the second visualization, the line chart gets highlighted based on the agency selected from the label.
 
-<p>For the second visualization, the line chart gets highlighted based on the agency selected from the label.</p>
+&lt;vegachart schema-url="/assets/json/jsonIntYearAcquiredVsSquareFootage.json" style="width: 100%"&gt;&lt;/vegachart&gt;
 
-<vegachart schema-url="/assets/json/jsonIntYearAcquiredVsSquareFootage.json" style="width: 100%"></vegachart>
-
-<vegachart schema-url="/assets/json/jsonLabYearAcquiredVsSquareFootage.json" style="width: 100%"></vegachart>
+&lt;vegachart schema-url="/assets/json/jsonLabYearAcquiredVsSquareFootage.json" style="width: 100%"&gt;&lt;/vegachart&gt;
+</code></pre></div></div>
 
 <p>#References:</p>
 
@@ -123,7 +123,7 @@ https://altair-viz.github.io/user_guide/encoding.html#encoding-data-types</p>
        onMouseOver="this.style.color='#1769ff'"
        onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-behance fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.github.com/goura2"
+    </a><a class="social mx-1"  href="https://www.github.com/shams1502"
        style="color: #6c757d"
        onMouseOver="this.style.color='#333333'"
        onMouseOut="this.style.color='#6c757d'">
