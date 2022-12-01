@@ -1,7 +1,7 @@
 ---
-name: Homework-Group31
-tools: [Python, HTML, vega-lite]
-image: assets/pngs/agency-graph.png
+name: FinalProject-Group31
+tools: [Python, HTML, vega-lite, Altair]
+image: assets/pngs/Interactiveplot1.png
 description: This is a "showcase" project that uses vega-lite for interactive viz!
 custom_js:
   - vega.min
@@ -11,17 +11,17 @@ custom_js:
 ---
 
 
-# Data Visualization Homework 10
-Group 31
+# Data Visualization Final Project
+Group 27
 
 Team Members : Shambhavi Sahay(ssahay4), Goura Karn(goura2), Vikramaditya Agarwala(va22)
 
 
 # Visualization 1
 
-In this visualization, we are trying to plot the total of "Square Footage" with their respective "Agency Name". We have used Altair to create the below plot. We have used brush to highlight selection intervals. We have also added color based on the count of the records.
+In this visualization, we are trying to plot the rate of all property crimes with the rate of all Violent Crimes. We have used Altair to create the below plot. We have used brush to highlight selection intervals. We have also added color based on the count of the records.
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/jsonAgencyvsSquareFootage.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/Interactiveplot1.json" style="width: 100%"></vegachart>
 
 # Visualization 2
 
