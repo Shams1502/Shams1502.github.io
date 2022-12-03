@@ -46,20 +46,19 @@ Here, we tried finding the relation between the rate of property crime and viole
 
 # Visualization 2
 
-From this visualization we can see that although the total violent and property crime is higher for California, the rate at which these crimes are committed is the highest in District of Columbia. This can be because of the higher population of California. 
+In this visualization, we tried to compare Total Property Crimes,Total Violent crimes,Rate of Property Crimes and Rate of Violent Crimes for selected states.
+From this visualization, if we select California and Columbia,we can see that although the total violent and property crime is higher for California, the rate at which these crimes are committed is the highest in District of Columbia. This can be because of the higher population of California. 
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/chartsnew.json" style="width: 100%"></vegachart>
-```
-<vegachart schema-url="{{ site.baseurl }}/assets/json/Multiselect2.json" style="width: 100%"></vegachart>
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/Multiselect3.json" style="width: 100%"></vegachart>
-
-<vegachart schema-url="{{ site.baseurl }}/assets/json/Multiselect4.json" style="width: 100%"></vegachart>
-```
 
 # Visualization 3 
 
-With this visualization we tried categorizing all the states that had similar crime rates. From the visualization it can be inferred that California, New York and Illinois had similar crime rates i.e the rates were on the higher side whereas states like Kentucky, North Dakota and West Virginia have smaller crime rates and thus safer place to live in. 
+With this visualization we tried categorizing all the states that had similar crime rates. 
+In this visualization, when we select a particular area, different states will get highlighted which comes in that particular area range. 
+From the visualization it can be inferred that California, New York and Illinois had similar crime rates i.e the rates were on the higher side whereas states like Kentucky, North Dakota and West Virginia have smaller crime rates and thus safer place to live in. 
+
+
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/binned.json" style="width: 100%"></vegachart>
 
