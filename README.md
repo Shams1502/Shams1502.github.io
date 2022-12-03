@@ -1,5 +1,5 @@
 # IS445 Data Visualization Final Project
-
+# Stats of the States: State Crime Analysis
 # How to use this repo
 
 ## Download & install
