@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="FinalProject-Group31">
-  <meta property="og:description" content="This is a "showcase" project that uses vega-lite for interactive viz!">
+  <meta property="og:title" content="FinalProject-Group27">
+  <meta property="og:description" content="Crime Data Analysis for the States">
   <meta property="og:image" content="assets/pngs/Interactiveplot1.png">
 
-  <title>FinalProject-Group31</title>
-  <meta name="description" content="This is a "showcase" project that uses vega-lite for interactive viz!">
+  <title>FinalProject-Group27</title>
+  <meta name="description" content="Crime Data Analysis for the States">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -52,7 +52,7 @@
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed">
 
-  <a class="navbar-brand" href="/"><h5><b>IS 445 Data Visulization Final Project</b></h5></a>
+  <a class="navbar-brand" href="/"><h5><b>Stats of the States: State Crime Analysis</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
@@ -73,40 +73,63 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="data-visualization-final-project">Data Visualization Final Project</h1>
+  <h1 id="stats-of-the-states-state-crime-analysis">Stats of the States: State Crime Analysis</h1>
 <p>Group 27</p>
 
 <p>Team Members : Shambhavi Sahay(ssahay4), Goura Karn(goura2), Vikramaditya Agarwala(va22)</p>
 
+<h1 id="introduction">Introduction</h1>
+
+<p>In the United States, crime has always been a problem. Although the country has relatively high crime rates, they have dramatically declined over the previous 25 years. About 47.70 crimes are committed against every 100,000 people in the US. The American government has two categories for crime. Either a violent crime or a property crime is considered a criminal conduct. A violent crime is one that involves four criminal acts: assault, robbery, intentional or unintentional homicide, and rape. The property crime includes criminal acts like burglary, larceny and motor vehicle harm.</p>
+
+<p>Some of the elements that are known to have an impact on the quantity and nature of crime in a given area include:</p>
+<ol>
+  <li>Urbanization level and population density</li>
+  <li>Demographics of the area</li>
+  <li>The influence of resident mobility, travel habits, and temporal factors on population stability</li>
+  <li>Cultural aspects, including educational, recreational, and religious qualities. - Economic conditions, including median income, poverty level, and capacity to work</li>
+</ol>
+
 <h1 id="visualization-1">Visualization 1</h1>
 
-<p>In this visualization, we are trying to plot the rate of all property crimes with the rate of all Violent Crimes. We have used Altair to create the below plot. We have used brush to highlight selection intervals. We have also added color based on the count of the records.</p>
+<p>We have created this interactive plot using the dataset that was made available by the Unified Crime Reporting Statistics and a partnership between the Federal Bureau of Investigation and the U.S. Department of Justice.</p>
 
-<vegachart schema-url="/assets/json/InteractivePlot1.json" style="width: 100%"></vegachart>
+<p>Link to dataset: https://think.cs.vt.edu/corgis/datasets/csv/state_crime/state_crime.csv</p>
+
+<vegachart schema-url="/assets/json/interactive1.json" style="width: 100%"></vegachart>
+
+<p>It has data from the year 1960 to the year 2019 about the state the crime took place in, population of the state at the time of the crime, rates of different property and violent crimes.</p>
+
+<p>(The number of reported offenses per 100,000 people is referred to as a rate.)</p>
+
+<p>Here, we tried finding the relation between the rate of property crime and violent crime based on the population and state. We have also included a slider from where we can select the year for which the crime was reported.  From the graph it can be inferred that the rate of both property and violent crime decreased over the years. It can also be said that Maine, New Hampshire, North Dakota, West Virginia had the lowest crime rates over the years. In the year 1960, California had the highest rate of property crime while Illinois took the lead in violent crime rates. But over the years, both California and Illinois had become a safer place to live in.</p>
 
 <h1 id="visualization-2">Visualization 2</h1>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Below, we have created a non-interactive histogram using altair based on building status and the total square footage. The x-axis has the building status that is an ordinal value and we have specified square footage as quantitative.
 
-&lt;vegachart schema-url="/assets/json/jsonBldgStatusVsSquareFootage.json" style="width: 100%"&gt;&lt;/vegachart&gt;
+<p>From this visualization we can see that although the total violent and property crime is higher for California, the rate at which these crimes are committed is the highest in District of Columbia. This can be because of the higher population of California.</p>
 
-# Visualization 3 and Visualization 4
+<vegachart schema-url="/assets/json/Allviolent.json" style="width: 100%"></vegachart>
 
-Next, we have created two line charts based on the year the building was acquired and the total square footage of the building. We have used the agency name as the legend in both of the visualizations.
+<vegachart schema-url="/assets/json/AllProperty.json" style="width: 100%"></vegachart>
 
-For the first visualization we have created a selection based interaction. Upon selection the area gets highlighted.
+<h1 id="visualization-3">Visualization 3</h1>
 
-For the second visualization, the line chart gets highlighted based on the agency selected from the label.
+<p>With this visualization we tried categorizing all the states that had similar crime rates. From the visualization it can be inferred that California, New York and Illinois had similar crime rates i.e the rates were on the higher side whereas states like Kentucky, North Dakota and West Virginia have smaller crime rates and thus safer place to live in.</p>
 
-&lt;vegachart schema-url="/assets/json/jsonIntYearAcquiredVsSquareFootage.json" style="width: 100%"&gt;&lt;/vegachart&gt;
+<vegachart schema-url="/assets/json/binned.json" style="width: 100%"></vegachart>
 
-&lt;vegachart schema-url="/assets/json/jsonLabYearAcquiredVsSquareFootage.json" style="width: 100%"&gt;&lt;/vegachart&gt;
-</code></pre></div></div>
+<h1 id="references">References:</h1>
 
-<p>#References:</p>
-
-<p>https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2022/nbv.html?notebook_name=%2Fis445_bcubcg_fall2022%2Fweek13%2FinClass_week13.ipynb
-https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2022/nbv.html?notebook_name=%2Fis445_bcubcg_fall2022%2Fweek11%2FinClass_week11.ipynb
-https://altair-viz.github.io/user_guide/encoding.html#encoding-data-types</p>
+<ol>
+  <li>https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2022/nbv.html?notebook_name=%2Fis445_bcubcg_fall2022%2Fweek13%2FinClass_week13.ipynb</li>
+  <li>https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2022/nbv.html?notebook_name=%2Fis445_bcubcg_fall2022%2Fweek11%2FinClass_week11.ipynb</li>
+  <li>https://altair-viz.github.io/user_guide/encoding.html#encoding-data-types</li>
+  <li>https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2022/nbv.html?notebook_name=%2Fis445_bcubcg_fall2022%2Fweek13%2FinClass_week13.ipynb</li>
+  <li>https://uiuc-ischool-dataviz.github.io/is445_bcubcg_fall2022/nbv.html?notebook_name=%2Fis445_bcubcg_fall2022%2Fweek11%2FinClass_week11.ipynb</li>
+  <li>https://altair-viz.github.io/user_guide/encoding.html#encoding-data-types</li>
+  <li>https://worldpopulationreview.com/state-rankings/crime-rate-by-state</li>
+  <li>https://www.statista.com/statistics/200445/reported-violent-crime-rate-in-the-us-states/</li>
+</ol>
 
 
 </div>
@@ -115,15 +138,10 @@ https://altair-viz.github.io/user_guide/encoding.html#encoding-data-types</p>
 
   <small class="text-muted mb-2">
     <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
-    by <strong>Group Task</strong>
+    by <strong>Shambhavi Sahay, Goura, Vikramaditya Agarwala</strong>
   </small>
 
-  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.behance.net/your_username"
-       style="color: #6c757d"
-       onMouseOver="this.style.color='#1769ff'"
-       onMouseOut="this.style.color='#6c757d'">
-      <i class="fab fa-behance fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.github.com/shams1502"
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="https://www.github.com/shams1502"
        style="color: #6c757d"
        onMouseOver="this.style.color='#333333'"
        onMouseOut="this.style.color='#6c757d'">
