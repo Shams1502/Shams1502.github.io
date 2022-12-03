@@ -48,14 +48,14 @@ Here, we tried finding the relation between the rate of property crime and viole
 
 From this visualization we can see that although the total violent and property crime is higher for California, the rate at which these crimes are committed is the highest in District of Columbia. This can be because of the higher population of California. 
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/Multiselect1.json" style="width: 100%"></vegachart>
-
+<vegachart schema-url="{{ site.baseurl }}/assets/json/chartsnew.json" style="width: 100%"></vegachart>
+```
 <vegachart schema-url="{{ site.baseurl }}/assets/json/Multiselect2.json" style="width: 100%"></vegachart>
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/Multiselect3.json" style="width: 100%"></vegachart>
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/Multiselect4.json" style="width: 100%"></vegachart>
-
+```
 
 # Visualization 3 
 
